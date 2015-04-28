@@ -46,8 +46,6 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
-
-
 syntax on
 set t_Co=256
 colorscheme jellybeans 
@@ -55,5 +53,5 @@ colorscheme jellybeans
 hi ColorColumn ctermbg=234
 let &colorcolumn=join(range(80,999),",")
 
-filetype plugin on
-set omnifunc=syntaxcomplete#Complete
+"filetype plugin on
+"set omnifunc=syntaxcomplete#Complete
