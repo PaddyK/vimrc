@@ -9,6 +9,8 @@ Plugin 'gmarik/Vundle.vim'
 " Add other plugins here
 " ======================
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'tpope/vim-fugitive'
+"
 "
 " All plugins have to be added before this
 call vundle#end()
@@ -25,6 +27,22 @@ set wrapmargin=0
 set tabstop=4
 set shiftwidth=4
 set expandtab
+
+" With this it becomes possible to fold/unfold a method using za
+set foldmethod=indent
+set foldlevel=99
+
+" Window Splits
+"   Vertical Split          : ctrl+w + v
+"   Horizontal Split        : ctrl+w + s
+"   Close current windows   : ctrl+w + q
+" Reset keybindings to move around windows using ctrl+<direction>
+map <c-j> <c-w>j
+map <c-k> <c-w>k
+map <c-l> <c-w>l
+map <c-h> <c-w>h
+
+
 
 syntax on
 set t_Co=256
