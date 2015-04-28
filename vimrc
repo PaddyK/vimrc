@@ -8,8 +8,7 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 " Add other plugins here
 " ======================
-"
-"
+Plugin 'Valloric/YouCompleteMe'
 "
 " All plugins have to be added before this
 call vundle#end()
@@ -29,7 +28,7 @@ set expandtab
 
 syntax on
 set t_Co=256
-olorscheme jellybeans 
+colorscheme jellybeans 
 
 hi ColorColumn ctermbg=234
 let &colorcolumn=join(range(80,999),",")
