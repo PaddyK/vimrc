@@ -9,6 +9,10 @@ Plugin 'gmarik/Vundle.vim'
 " Add other plugins here
 " ======================
 Plugin 'Valloric/YouCompleteMe'
+
+" Some useful commands:
+"   Gstatus: go to line and toggel whether to stage for commit or not with -
+"   Gcommit
 Plugin 'tpope/vim-fugitive'
 "
 "
