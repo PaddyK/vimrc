@@ -14,8 +14,9 @@ Plugin 'Valloric/YouCompleteMe'
 "   Gstatus: go to line and toggel whether to stage for commit or not with -
 "   Gcommit
 Plugin 'tpope/vim-fugitive'
-"
-"
+Plugin 'scrooloose/nerdtree'
+
+
 " All plugins have to be added before this
 call vundle#end()
 filetype plugin indent on
@@ -48,11 +49,11 @@ map <c-h> <c-w>h
 
 syntax on
 set t_Co=256
-let g:jellybeans_background_color_256='NONE'
-colorscheme jellybeans 
+" let g:jellybeans_background_color_256='NONE'
+ colorscheme jellybeans 
 
-" hi ColorColumn ctermbg=234
-" let &colorcolumn=join(range(80,999),",")
+ hi ColorColumn ctermbg=234
+ let &colorcolumn=join(range(80,999),",")
 
 "filetype plugin on
 "set omnifunc=syntaxcomplete#Complete
