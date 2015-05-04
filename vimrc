@@ -15,7 +15,10 @@ Plugin 'Valloric/YouCompleteMe'
 "   Gcommit
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
-
+Plugin 'bling/vim-airline'
+Plugin 'ervandew/supertab'
+Plugin 'vim-scripts/mru'
+Plugin 'scrooloose/syntastic'
 
 " All plugins have to be added before this
 call vundle#end()
@@ -57,3 +60,9 @@ set t_Co=256
 
 "filetype plugin on
 "set omnifunc=syntaxcomplete#Complete
+"
+"-----------------------------------------------------------------------------
+" Settings for vim-airline
+" ----------------------------------------------------------------------------
+let g:airline_theme='jellybeans'
+set laststatus=2 " necessary s.t. vim-airline loads instantly
