@@ -66,3 +66,5 @@ set t_Co=256
 " ----------------------------------------------------------------------------
 let g:airline_theme='jellybeans'
 set laststatus=2 " necessary s.t. vim-airline loads instantly
+let g:airline_powerline_fonts=1 " You need to install powerline fonds for this
+                                " to work. https://github.com/powerline/fonts
