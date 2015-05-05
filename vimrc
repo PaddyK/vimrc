@@ -7,7 +7,7 @@ call vundle#begin()
 " Let vundle manage vundle, required
 Plugin 'gmarik/Vundle.vim'
 " Add other plugins here
-" ======================
+" =======================
 Plugin 'Valloric/YouCompleteMe'
 
 " Some useful commands:
