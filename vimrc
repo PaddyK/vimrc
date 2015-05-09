@@ -4,11 +4,23 @@ filetype off
 " Set the runtime path to vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
+
 " Let vundle manage vundle, required
 Plugin 'gmarik/Vundle.vim'
+
+" Installing Vundle:
+"   run: git clone https://github.com/gmarik/Vundle.vim.git \
+"           ~/.vim/bundle/Vundle.vim
+"   Start vim and type :PluginInstall
+
 " Add other plugins here
 " =======================
 Plugin 'Valloric/YouCompleteMe'
+
+" Installing YouCompleteMe:
+"   First run :PluginInstall
+"   required software: build-essentials, cmake python-dev
+"   run cd ~/.vim/bundle/YouCompleteMe && ./install.sh --clang-completer
 
 " Some useful commands:
 "   Gstatus: go to line and toggel whether to stage for commit or not with -
@@ -16,6 +28,9 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'bling/vim-airline'
+" Installing fonts: git clone https://github.com/powerline/fonts.git
+" cd powerline && ./install.sh
+
 Plugin 'ervandew/supertab'
 Plugin 'vim-scripts/mru'
 Plugin 'scrooloose/syntastic'
