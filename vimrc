@@ -65,6 +65,10 @@ map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
 
+" replace usual past with paste-yank-just-pasted-content
+" allows for pasting the same content in succession
+xnoremap p pgvy
+
 syntax on
 set t_Co=256
 " let g:jellybeans_background_color_256='NONE'
