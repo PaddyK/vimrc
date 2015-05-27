@@ -44,7 +44,7 @@ set nu
 set wrap
 set linebreak
 set nolist " list disables line break
-set textwidth=80
+set textwidth=99
 set wrapmargin=0
 
 set tabstop=4
@@ -71,16 +71,19 @@ xnoremap p pgvy
 
 syntax on
 set t_Co=256
-" let g:jellybeans_background_color_256='NONE'
- colorscheme jellybeans 
+let g:jellybeans_background_color_256='NONE'
+colorscheme jellybeans 
 
- hi ColorColumn ctermbg=234
- let &colorcolumn=join(range(80,999),",")
+hi ColorColumn ctermbg=234
+hi OverLength ctermfg=red
+match OverLength  /\%90v.\+/
+"let &colorcolumn=join(range(80,999),",")
+set colorcolumn=90
 
 "filetype plugin on
 "set omnifunc=syntaxcomplete#Complete
 "
-"-----------------------------------------------------------------------------
+"----------------------------------------------------------------------------------------
 " Settings for vim-airline
 " ----------------------------------------------------------------------------
 let g:airline_theme='jellybeans'
