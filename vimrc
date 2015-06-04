@@ -69,6 +69,9 @@ map <c-h> <c-w>h
 " allows for pasting the same content in succession
 xnoremap p pgvy
 
+autocmd BufWinLeave *.* mkview
+autocmd BufWinEnter *.* silent loadview
+
 syntax on
 set t_Co=256
 " let g:jellybeans_background_color_256='NONE'
