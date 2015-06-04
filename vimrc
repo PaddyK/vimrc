@@ -71,22 +71,30 @@ xnoremap p pgvy
 
 syntax on
 set t_Co=256
-let g:jellybeans_background_color_256='NONE'
-colorscheme jellybeans 
+" let g:jellybeans_background_color_256='NONE'
+let g:lucius_style = 'light'
+colorscheme lucius
 
-hi ColorColumn ctermbg=234
-hi OverLength ctermfg=red
-match OverLength  /\%90v.\+/
-"let &colorcolumn=join(range(80,999),",")
+" For dark schemes:
+" hi ColorColumn ctermbg=234
+
+" For light schemes:
+hi ColorColumn ctermbg=153 ctermfg=9
 set colorcolumn=90
+
+hi ExtraWhiteSpace ctermbg=124
+match ExtraWhiteSpace /\s\+$/
+" Overlength definition has to come after this
+hi OverLength ctermfg=9
+match OverLength '\%>90v'
 
 "filetype plugin on
 "set omnifunc=syntaxcomplete#Complete
 "
-"----------------------------------------------------------------------------------------
+"---------------------------------------------------------------------------------------
 " Settings for vim-airline
-" ----------------------------------------------------------------------------
-let g:airline_theme='jellybeans'
+" ---------------------------------------------------------------------------------------
+"let g:airline_theme='jellybeans'
 set laststatus=2 " necessary s.t. vim-airline loads instantly
 let g:airline_powerline_fonts=1 " You need to install powerline fonds for this
                                 " to work. https://github.com/powerline/fonts
