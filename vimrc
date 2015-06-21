@@ -64,7 +64,8 @@ map <c-j> <c-w>j
 map <c-k> <c-w>k
 map <c-l> <c-w>l
 map <c-h> <c-w>h
-
+vmap Zc :foldc!<CR>
+imap jj <Esc>
 " replace usual past with paste-yank-just-pasted-content
 " allows for pasting the same content in succession
 xnoremap p pgvy
@@ -74,6 +75,11 @@ autocmd BufWinEnter *.* silent loadview
 
 syntax on
 set t_Co=256
+
+"syn match ExtraWhitespace /\s\+$/
+"autocmd ColorScheme * highlight ExtraWhitespace ctermbg=124    
+"highlight ExtraWhitespace ctermbg=124    
+
 " let g:jellybeans_background_color_256='NONE'
 let g:lucius_style = 'light'
 colorscheme lucius
@@ -85,19 +91,19 @@ colorscheme lucius
 hi ColorColumn ctermbg=153 ctermfg=9
 set colorcolumn=90
 
-hi ExtraWhiteSpace ctermbg=124
-match ExtraWhiteSpace /\s\+$/
 " Overlength definition has to come after this
 hi OverLength ctermfg=9
-match OverLength '\%>90v'
+syntax match ExtraWhitespace /read_/ 
+autocmd BufWinEnter * match OverLength '\%>90v'
 
 "filetype plugin on
 "set omnifunc=syntaxcomplete#Complete
 "
-"---------------------------------------------------------------------------------------
+"-------------------------------------------------------------------------------------------------
 " Settings for vim-airline
 " ---------------------------------------------------------------------------------------
 "let g:airline_theme='jellybeans'
 set laststatus=2 " necessary s.t. vim-airline loads instantly
 let g:airline_powerline_fonts=1 " You need to install powerline fonds for this
                                 " to work. https://github.com/powerline/fonts
+
