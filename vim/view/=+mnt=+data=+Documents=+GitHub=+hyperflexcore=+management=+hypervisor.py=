@@ -1,0 +1,234 @@
+let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+argglobal
+setlocal keymap=
+setlocal noarabic
+setlocal autoindent
+setlocal nobinary
+setlocal bufhidden=
+setlocal buflisted
+setlocal buftype=
+setlocal nocindent
+setlocal cinkeys=0{,0},0),:,!^F,o,O,e
+setlocal cinoptions=
+setlocal cinwords=if,else,while,do,for,switch
+setlocal colorcolumn=80
+setlocal comments=s1:/*,mb:*,ex:*/,://,b:#,:XCOMM,n:>,fb:-
+setlocal commentstring=#%s
+setlocal complete=.,w,b,u,t,i
+setlocal concealcursor=
+setlocal conceallevel=0
+setlocal completefunc=youcompleteme#Complete
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal nocursorbind
+setlocal nocursorcolumn
+setlocal nocursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal expandtab
+if &filetype != 'python'
+setlocal filetype=python
+endif
+setlocal foldcolumn=0
+setlocal foldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=99
+setlocal foldmarker={{{,}}}
+setlocal foldmethod=indent
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldtext=foldtext()
+setlocal formatexpr=
+setlocal formatoptions=tcq
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=0
+setlocal imsearch=0
+setlocal include=^\\s*\\(from\\|import\\)
+setlocal includeexpr=substitute(v:fname,'\\.','/','g')
+setlocal indentexpr=GetPythonIndent(v:lnum)
+setlocal indentkeys=0{,0},:,!^F,o,O,e,<:>,=elif,=except
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,192-255
+setlocal keywordprg=pydoc
+setlocal linebreak
+setlocal nolisp
+setlocal nolist
+setlocal makeprg=
+setlocal matchpairs=(:),{:},[:]
+setlocal modeline
+setlocal modifiable
+setlocal nrformats=octal,hex
+setlocal number
+setlocal numberwidth=4
+setlocal omnifunc=youcompleteme#OmniComplete
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal norightleft
+setlocal rightleftcmd=search
+setlocal noscrollbind
+setlocal shiftwidth=4
+setlocal noshortname
+setlocal nosmartindent
+setlocal softtabstop=4
+setlocal nospell
+setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=%!airline#statusline(2)
+setlocal suffixesadd=.py
+setlocal swapfile
+setlocal synmaxcol=3000
+if &syntax != 'python'
+setlocal syntax=python
+endif
+setlocal tabstop=8
+setlocal tags=
+setlocal textwidth=99
+setlocal thesaurus=
+setlocal noundofile
+setlocal nowinfixheight
+setlocal nowinfixwidth
+setlocal wrap
+setlocal wrapmargin=0
+9
+normal! zo
+9
+normal! zc
+38
+normal! zo
+42
+normal! zo
+38
+normal! zc
+130
+normal! zo
+137
+normal! zo
+137
+normal! zc
+155
+normal! zo
+155
+normal! zc
+176
+normal! zo
+178
+normal! zo
+178
+normal! zc
+194
+normal! zo
+195
+normal! zo
+195
+normal! zo
+195
+normal! zc
+176
+normal! zc
+200
+normal! zc
+204
+normal! zo
+215
+normal! zo
+215
+normal! zc
+204
+normal! zc
+230
+normal! zo
+232
+normal! zo
+236
+normal! zo
+237
+normal! zc
+236
+normal! zc
+232
+normal! zc
+275
+normal! zc
+277
+normal! zo
+277
+normal! zo
+280
+normal! zo
+280
+normal! zo
+281
+normal! zo
+295
+normal! zo
+299
+normal! zo
+301
+normal! zo
+307
+normal! zo
+309
+normal! zo
+317
+normal! zc
+309
+normal! zc
+307
+normal! zc
+326
+normal! zc
+330
+normal! zc
+334
+normal! zo
+336
+normal! zo
+336
+normal! zc
+353
+normal! zc
+357
+normal! zc
+334
+normal! zc
+367
+normal! zo
+369
+normal! zo
+377
+normal! zc
+369
+normal! zc
+367
+normal! zc
+383
+normal! zo
+385
+normal! zo
+386
+normal! zc
+383
+normal! zc
+396
+normal! zo
+396
+normal! zc
+let s:l = 282 - ((28 * winheight(0) + 28) / 57)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+282
+normal! 047|
+let &so = s:so_save | let &siso = s:siso_save
+doautoall SessionLoadPost
+" vim: set ft=vim :

@@ -80,21 +80,26 @@ set t_Co=256
 "autocmd ColorScheme * highlight ExtraWhitespace ctermbg=124    
 "highlight ExtraWhitespace ctermbg=124    
 
-" let g:jellybeans_background_color_256='NONE'
-let g:lucius_style = 'light'
-colorscheme lucius
+"let g:jellybeans_background_color_256='NONE'
+"colorscheme jellybeans
+"let g:lucius_style = 'light'
+"colorscheme lucius
+set background=light
+let g:solarized_termcolors=16
+colorscheme solarized
 
 " For dark schemes:
-" hi ColorColumn ctermbg=234
+"hi ColorColumn ctermbg=234
 
 " For light schemes:
-hi ColorColumn ctermbg=153 ctermfg=9
-set colorcolumn=90
+"hi ColorColumn ctermbg=153 ctermfg=9
+hi ColorColumn ctermbg=7 ctermfg=9
+set colorcolumn=80
 
 " Overlength definition has to come after this
 hi OverLength ctermfg=9
 syntax match ExtraWhitespace /read_/ 
-autocmd BufWinEnter * match OverLength '\%>90v'
+autocmd BufWinEnter * match OverLength '\%>80v'
 
 "filetype plugin on
 "set omnifunc=syntaxcomplete#Complete

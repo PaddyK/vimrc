@@ -11,7 +11,7 @@ setlocal nocindent
 setlocal cinkeys=0{,0},0),:,!^F,o,O,e
 setlocal cinoptions=
 setlocal cinwords=if,else,while,do,for,switch
-setlocal colorcolumn=90
+setlocal colorcolumn=80
 setlocal comments=s1:/*,mb:*,ex:*/,://,b:#,:XCOMM,n:>,fb:-
 setlocal commentstring=#%s
 setlocal complete=.,w,b,u,t,i
@@ -36,7 +36,7 @@ setlocal foldcolumn=0
 setlocal foldenable
 setlocal foldexpr=0
 setlocal foldignore=#
-setlocal foldlevel=99
+setlocal foldlevel=100
 setlocal foldmarker={{{,}}}
 setlocal foldmethod=indent
 setlocal foldminlines=1
@@ -83,7 +83,7 @@ setlocal nospell
 setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
 setlocal spellfile=
 setlocal spelllang=en
-setlocal statusline=%!airline#statusline(2)
+setlocal statusline=%!airline#statusline(1)
 setlocal suffixesadd=.py
 setlocal swapfile
 setlocal synmaxcol=3000
@@ -99,16 +99,42 @@ setlocal nowinfixheight
 setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
-7
+14
 normal! zo
-85
+14
+normal! zc
+92
 normal! zo
-let s:l = 113 - ((37 * winheight(0) + 28) / 57)
+92
+normal! zc
+143
+normal! zo
+143
+normal! zc
+443
+normal! zo
+444
+normal! zo
+476
+normal! zo
+497
+normal! zo
+504
+normal! zo
+516
+normal! zo
+531
+normal! zo
+578
+normal! zo
+586
+normal! zo
+let s:l = 477 - ((0 * winheight(0) + 30) / 61)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-113
-normal! 05|
+477
+normal! 029|
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost
 " vim: set ft=vim :

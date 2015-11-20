@@ -11,7 +11,7 @@ setlocal nocindent
 setlocal cinkeys=0{,0},0),:,!^F,o,O,e
 setlocal cinoptions=
 setlocal cinwords=if,else,while,do,for,switch
-setlocal colorcolumn=90
+setlocal colorcolumn=80
 setlocal comments=s1:/*,mb:*,ex:*/,://,b:#,:XCOMM,n:>,fb:-
 setlocal commentstring=#%s
 setlocal complete=.,w,b,u,t,i
@@ -83,7 +83,7 @@ setlocal nospell
 setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
 setlocal spellfile=
 setlocal spelllang=en
-setlocal statusline=%!airline#statusline(1)
+setlocal statusline=%!airline#statusline(3)
 setlocal suffixesadd=.py
 setlocal swapfile
 setlocal synmaxcol=3000
@@ -99,22 +99,22 @@ setlocal nowinfixheight
 setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
-26
+8
 normal! zo
-28
+11
 normal! zo
-28
+27
+normal! zo
+29
+normal! zo
+27
 normal! zc
-78
-normal! zo
-87
-normal! zo
-let s:l = 4 - ((3 * winheight(0) + 20) / 40)
+let s:l = 20 - ((19 * winheight(0) + 31) / 62)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-4
-normal! 015|
+20
+normal! 016|
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost
 " vim: set ft=vim :

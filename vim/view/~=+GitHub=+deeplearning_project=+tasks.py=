@@ -1,0 +1,262 @@
+let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
+argglobal
+setlocal keymap=
+setlocal noarabic
+setlocal autoindent
+setlocal nobinary
+setlocal bufhidden=
+setlocal buflisted
+setlocal buftype=
+setlocal nocindent
+setlocal cinkeys=0{,0},0),:,!^F,o,O,e
+setlocal cinoptions=
+setlocal cinwords=if,else,while,do,for,switch
+setlocal colorcolumn=80
+setlocal comments=s1:/*,mb:*,ex:*/,://,b:#,:XCOMM,n:>,fb:-
+setlocal commentstring=#%s
+setlocal complete=.,w,b,u,t,i
+setlocal concealcursor=
+setlocal conceallevel=0
+setlocal completefunc=youcompleteme#Complete
+setlocal nocopyindent
+setlocal cryptmethod=
+setlocal nocursorbind
+setlocal nocursorcolumn
+setlocal nocursorline
+setlocal define=
+setlocal dictionary=
+setlocal nodiff
+setlocal equalprg=
+setlocal errorformat=
+setlocal expandtab
+if &filetype != 'python'
+setlocal filetype=python
+endif
+setlocal foldcolumn=0
+setlocal foldenable
+setlocal foldexpr=0
+setlocal foldignore=#
+setlocal foldlevel=99
+setlocal foldmarker={{{,}}}
+setlocal foldmethod=indent
+setlocal foldminlines=1
+setlocal foldnestmax=20
+setlocal foldtext=foldtext()
+setlocal formatexpr=
+setlocal formatoptions=tcq
+setlocal formatlistpat=^\\s*\\d\\+[\\]:.)}\\t\ ]\\s*
+setlocal grepprg=
+setlocal iminsert=0
+setlocal imsearch=0
+setlocal include=^\\s*\\(from\\|import\\)
+setlocal includeexpr=substitute(v:fname,'\\.','/','g')
+setlocal indentexpr=GetPythonIndent(v:lnum)
+setlocal indentkeys=0{,0},:,!^F,o,O,e,<:>,=elif,=except
+setlocal noinfercase
+setlocal iskeyword=@,48-57,_,192-255
+setlocal keywordprg=
+setlocal linebreak
+setlocal nolisp
+setlocal nolist
+setlocal makeprg=
+setlocal matchpairs=(:),{:},[:]
+setlocal modeline
+setlocal modifiable
+setlocal nrformats=octal,hex
+setlocal number
+setlocal numberwidth=4
+setlocal omnifunc=youcompleteme#OmniComplete
+setlocal path=
+setlocal nopreserveindent
+setlocal nopreviewwindow
+setlocal quoteescape=\\
+setlocal noreadonly
+setlocal norelativenumber
+setlocal norightleft
+setlocal rightleftcmd=search
+setlocal noscrollbind
+setlocal shiftwidth=4
+setlocal noshortname
+setlocal nosmartindent
+setlocal softtabstop=0
+setlocal nospell
+setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
+setlocal spellfile=
+setlocal spelllang=en
+setlocal statusline=%!airline#statusline(2)
+setlocal suffixesadd=.py
+setlocal swapfile
+setlocal synmaxcol=3000
+if &syntax != 'python'
+setlocal syntax=python
+endif
+setlocal tabstop=4
+setlocal tags=
+setlocal textwidth=99
+setlocal thesaurus=
+setlocal noundofile
+setlocal nowinfixheight
+setlocal nowinfixwidth
+setlocal wrap
+setlocal wrapmargin=0
+47
+normal! zo
+49
+normal! zo
+49
+normal! zc
+67
+normal! zo
+72
+normal! zo
+72
+normal! zo
+76
+normal! zo
+77
+normal! zo
+47
+normal! zc
+84
+normal! zo
+86
+normal! zo
+94
+normal! zo
+86
+normal! zc
+104
+normal! zo
+110
+normal! zo
+111
+normal! zo
+84
+normal! zc
+118
+normal! zo
+118
+normal! zc
+121
+normal! zo
+129
+normal! zo
+121
+normal! zc
+150
+normal! zo
+168
+normal! zo
+179
+normal! zo
+118
+normal! zc
+191
+normal! zo
+191
+normal! zc
+194
+normal! zo
+204
+normal! zo
+207
+normal! zc
+222
+normal! zo
+241
+normal! zo
+248
+normal! zo
+241
+normal! zc
+191
+normal! zc
+270
+normal! zo
+270
+normal! zc
+270
+normal! zc
+338
+normal! zo
+338
+normal! zc
+359
+normal! zo
+359
+normal! zc
+391
+normal! zo
+391
+normal! zc
+406
+normal! zo
+406
+normal! zc
+437
+normal! zo
+438
+normal! zo
+450
+normal! zo
+450
+normal! zo
+450
+normal! zo
+465
+normal! zo
+466
+normal! zo
+437
+normal! zc
+480
+normal! zo
+485
+normal! zo
+487
+normal! zo
+497
+normal! zo
+498
+normal! zo
+497
+normal! zc
+480
+normal! zc
+519
+normal! zo
+521
+normal! zo
+530
+normal! zo
+519
+normal! zc
+542
+normal! zo
+545
+normal! zo
+545
+normal! zo
+548
+normal! zo
+548
+normal! zo
+554
+normal! zo
+557
+normal! zo
+557
+normal! zo
+560
+normal! zo
+560
+normal! zo
+let s:l = 563 - ((294 * winheight(0) + 24) / 48)
+if s:l < 1 | let s:l = 1 | endif
+exe s:l
+normal! zt
+563
+normal! 048|
+let &so = s:so_save | let &siso = s:siso_save
+doautoall SessionLoadPost
+" vim: set ft=vim :

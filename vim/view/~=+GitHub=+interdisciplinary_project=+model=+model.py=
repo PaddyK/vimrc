@@ -11,7 +11,7 @@ setlocal nocindent
 setlocal cinkeys=0{,0},0),:,!^F,o,O,e
 setlocal cinoptions=
 setlocal cinwords=if,else,while,do,for,switch
-setlocal colorcolumn=90
+setlocal colorcolumn=80
 setlocal comments=s1:/*,mb:*,ex:*/,://,b:#,:XCOMM,n:>,fb:-
 setlocal commentstring=#%s
 setlocal complete=.,w,b,u,t,i
@@ -83,7 +83,7 @@ setlocal nospell
 setlocal spellcapcheck=[.?!]\\_[\\])'\"\	\ ]\\+
 setlocal spellfile=
 setlocal spelllang=en
-setlocal statusline=%!airline#statusline(2)
+setlocal statusline=%!airline#statusline(1)
 setlocal suffixesadd=.py
 setlocal swapfile
 setlocal synmaxcol=3000
@@ -113,404 +113,580 @@ normal! zc
 normal! zc
 145
 normal! zo
-145
+146
+normal! zo
+184
+normal! zo
+184
 normal! zc
-171
+218
 normal! zo
-171
+220
+normal! zo
+241
+normal! zo
+242
+normal! zo
+243
+normal! zo
+243
 normal! zc
-195
+263
 normal! zo
-195
+264
+normal! zo
+268
+normal! zo
+278
 normal! zc
-217
+285
 normal! zo
-219
+287
 normal! zo
-228
+305
 normal! zo
-237
-normal! zo
-238
-normal! zo
-249
-normal! zo
-217
-normal! zc
-257
-normal! zo
-257
-normal! zc
-277
-normal! zo
-277
-normal! zc
-289
-normal! zo
-290
-normal! zo
-296
-normal! zo
-316
+306
 normal! zo
 317
 normal! zo
-321
+325
 normal! zo
-338
+336
 normal! zo
-342
+357
 normal! zo
-360
-normal! zo
-367
-normal! zo
-367
+357
 normal! zc
-403
+427
 normal! zo
-403
+443
+normal! zo
+444
+normal! zo
+447
 normal! zc
-441
+463
 normal! zo
-441
+465
+normal! zo
+471
 normal! zc
-450
-normal! zo
-450
+465
 normal! zc
-460
+485
 normal! zo
-460
+489
+normal! zo
+463
 normal! zc
-469
+510
 normal! zo
-469
+514
+normal! zo
+112
 normal! zc
-475
+551
 normal! zo
-475
+551
 normal! zc
-491
+568
 normal! zo
-491
+573
+normal! zo
+573
 normal! zc
-508
+585
 normal! zo
-513
+587
 normal! zo
-513
+588
+normal! zo
+589
 normal! zc
-525
-normal! zo
-527
-normal! zo
-528
-normal! zo
-536
-normal! zo
-545
-normal! zo
-546
-normal! zo
-553
-normal! zo
-525
+588
 normal! zc
-574
-normal! zo
-574
+592
 normal! zc
-580
-normal! zo
-580
+587
 normal! zc
-590
-normal! zo
-590
+585
 normal! zc
-597
-normal! zo
-597
+623
 normal! zc
-508
+627
 normal! zc
-605
+640
 normal! zo
-606
-normal! zo
-616
-normal! zo
-606
+641
 normal! zc
-624
+650
 normal! zo
-624
+657
+normal! zo
+659
 normal! zc
-653
-normal! zo
-653
+657
 normal! zc
-661
-normal! zo
-661
+568
 normal! zc
-672
+665
 normal! zo
-673
+666
+normal! zo
+676
+normal! zo
+676
 normal! zc
-678
+713
 normal! zo
-678
+730
+normal! zo
+732
+normal! zo
+738
 normal! zc
-605
+730
 normal! zc
-685
+755
 normal! zo
-685
+756
 normal! zc
-716
+760
 normal! zo
-717
-normal! zo
-717
+761
 normal! zc
-740
+772
 normal! zo
-740
+772
 normal! zc
-774
+779
 normal! zo
-774
+793
+normal! zo
+793
 normal! zc
-788
-normal! zo
-788
+803
 normal! zc
-812
-normal! zo
-812
+779
 normal! zc
-831
+810
 normal! zo
-831
+811
+normal! zo
+814
+normal! zo
+814
 normal! zc
-852
+821
 normal! zo
-854
-normal! zo
-852
+825
 normal! zc
-860
+834
+normal! zo
+834
+normal! zc
+849
+normal! zo
+851
+normal! zo
+849
+normal! zc
+858
 normal! zo
 860
+normal! zo
+858
 normal! zc
-872
+867
 normal! zo
-873
+869
 normal! zo
-879
-normal! zo
-873
+867
 normal! zc
-897
+876
 normal! zo
-900
+878
 normal! zo
-918
-normal! zo
-947
-normal! zo
-949
-normal! zo
-957
-normal! zo
-971
-normal! zo
-971
-normal! zo
-971
+878
 normal! zc
-1002
-normal! zo
-1002
+876
 normal! zc
-1011
+885
 normal! zo
-1011
+893
+normal! zo
+893
 normal! zc
-1026
+907
 normal! zo
-1026
+909
+normal! zo
+912
+normal! zo
+909
 normal! zc
-1035
+929
 normal! zo
-1035
+930
+normal! zo
+931
+normal! zo
+931
 normal! zc
-1047
-normal! zo
-1047
+936
 normal! zc
-1055
-normal! zo
-1056
-normal! zo
-1059
-normal! zo
-1072
-normal! zo
-1056
+930
 normal! zc
-1092
-normal! zo
-1092
+929
 normal! zc
-1092
+950
+normal! zo
+951
+normal! zo
+950
 normal! zc
-1141
+969
 normal! zo
-1143
+970
 normal! zo
-1144
-normal! zo
-1143
+974
 normal! zc
-1153
-normal! zo
-1157
-normal! zo
-1163
-normal! zo
-1165
-normal! zo
-1189
-normal! zo
-1198
-normal! zo
-1198
+970
 normal! zc
-1227
+988
 normal! zo
-1228
+989
 normal! zo
-1228
+989
 normal! zc
-1227
+1023
+normal! zo
+1024
+normal! zo
+1024
 normal! zc
-1261
-normal! zo
-1262
-normal! zo
-1262
+1023
 normal! zc
-1261
+988
 normal! zc
-1290
+1070
 normal! zo
-1290
+1070
 normal! zc
-1302
+1082
+normal! zo
+1083
+normal! zo
+1083
 normal! zc
-1315
+1129
 normal! zo
-1316
-normal! zo
-1316
+1148
 normal! zc
-1315
+1129
 normal! zc
-1353
+1160
 normal! zo
-1353
+1160
 normal! zc
-1364
+1184
 normal! zo
-1364
+1184
+normal! zo
+1184
 normal! zc
-1374
+1192
 normal! zo
-1376
+1192
 normal! zo
-1374
+1193
+normal! zo
+1196
 normal! zc
-1394
-normal! zo
-1395
-normal! zo
-1395
+1193
 normal! zc
-1394
+1204
+normal! zo
+1204
+normal! zo
+1204
 normal! zc
-1413
-normal! zo
-1413
+1204
 normal! zc
-1425
+1224
 normal! zo
-1425
+1233
+normal! zo
+1248
+normal! zo
+1249
+normal! zo
+1249
 normal! zc
-1432
-normal! zo
-1433
-normal! zo
-1450
-normal! zo
-1433
+1248
 normal! zc
-1463
+1260
 normal! zo
-1463
+1260
 normal! zc
-1523
-normal! zo
-1525
-normal! zo
-1526
-normal! zo
-1536
-normal! zo
-1537
-normal! zo
-1568
+810
 normal! zc
-1577
-normal! zc
-1582
+1268
 normal! zo
-1584
+1269
 normal! zo
-1582
-normal! zc
-1602
+1285
 normal! zo
-1602
-normal! zc
-1610
+1305
 normal! zo
-1614
+1326
 normal! zo
-1614
-normal! zc
-1633
+1331
 normal! zo
-1633
-normal! zc
-1693
+1332
 normal! zo
-1693
+1332
 normal! zc
-1705
+1332
+normal! zc
+1331
+normal! zc
+1341
 normal! zo
-1705
+1343
+normal! zo
+1343
 normal! zc
-1610
+1341
 normal! zc
-let s:l = 1195 - ((55 * winheight(0) + 28) / 57)
+1350
+normal! zo
+1352
+normal! zo
+1352
+normal! zc
+1350
+normal! zc
+1359
+normal! zo
+1361
+normal! zo
+1361
+normal! zc
+1359
+normal! zc
+1368
+normal! zo
+1370
+normal! zo
+1370
+normal! zc
+1377
+normal! zo
+1417
+normal! zo
+1419
+normal! zo
+1420
+normal! zc
+1419
+normal! zc
+1447
+normal! zc
+1457
+normal! zo
+1457
+normal! zc
+1417
+normal! zc
+1481
+normal! zo
+1481
+normal! zc
+1489
+normal! zo
+1490
+normal! zo
+1501
+normal! zc
+1490
+normal! zc
+1534
+normal! zo
+1539
+normal! zo
+1540
+normal! zc
+1544
+normal! zc
+1547
+normal! zo
+1489
+normal! zc
+1570
+normal! zo
+1589
+normal! zo
+1591
+normal! zo
+1593
+normal! zc
+1591
+normal! zc
+1570
+normal! zc
+1625
+normal! zo
+1626
+normal! zo
+1629
+normal! zo
+1634
+normal! zc
+1626
+normal! zc
+1663
+normal! zo
+1664
+normal! zo
+1665
+normal! zc
+1664
+normal! zc
+1663
+normal! zc
+1670
+normal! zo
+1677
+normal! zo
+1678
+normal! zo
+1682
+normal! zo
+1684
+normal! zc
+1682
+normal! zc
+1694
+normal! zc
+1677
+normal! zc
+1700
+normal! zo
+1700
+normal! zc
+1736
+normal! zo
+1737
+normal! zo
+1741
+normal! zc
+1751
+normal! zo
+1751
+normal! zc
+1761
+normal! zo
+1761
+normal! zc
+1736
+normal! zc
+1772
+normal! zo
+1773
+normal! zo
+1793
+normal! zo
+1795
+normal! zo
+1795
+normal! zc
+1793
+normal! zc
+1813
+normal! zo
+1814
+normal! zo
+1814
+normal! zc
+1813
+normal! zc
+1832
+normal! zo
+1833
+normal! zo
+1833
+normal! zc
+1832
+normal! zc
+1852
+normal! zo
+1853
+normal! zo
+1860
+normal! zo
+1860
+normal! zc
+1877
+normal! zo
+1879
+normal! zo
+1880
+normal! zo
+1883
+normal! zc
+1877
+normal! zc
+1911
+normal! zo
+1911
+normal! zc
+1920
+normal! zo
+1920
+normal! zc
+1935
+normal! zo
+1937
+normal! zo
+1935
+normal! zc
+1952
+normal! zo
+1952
+normal! zc
+1961
+normal! zo
+2003
+normal! zo
+2004
+normal! zo
+2004
+normal! zc
+2003
+normal! zc
+2047
+normal! zo
+2048
+normal! zo
+2084
+normal! zo
+2047
+normal! zc
+2118
+normal! zc
+2123
+normal! zo
+2138
+normal! zo
+2139
+normal! zc
+let s:l = 109 - ((108 * winheight(0) + 31) / 62)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1195
-normal! 09|
+109
+normal! 0
 let &so = s:so_save | let &siso = s:siso_save
 doautoall SessionLoadPost
 " vim: set ft=vim :
