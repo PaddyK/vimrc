@@ -54,6 +54,7 @@ set nolist " list disables line break
 set tabstop=4
 set shiftwidth=4
 set expandtab
+set clipboard=unnamedplus
 
 let mapleader = ","
 
@@ -163,4 +164,8 @@ nmap <leader>bq :bp <BAR> bd #<CR>
 
 " " Show all open buffers and their status
 nmap <leader>bl :ls<CR>
+
+" Copy and paste from and to clipboard
+" noremap <leader>y "+y
+" noremap <leader>p "+p
 
