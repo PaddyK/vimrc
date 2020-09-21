@@ -1,5 +1,6 @@
 set nocompatible
 filetype off
+set shell=sh shellredir=>%s\ 2>&1
 
 " Set the runtime path to vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -35,15 +36,21 @@ Plugin 'ervandew/supertab'
 Plugin 'vim-scripts/mru'
 Plugin 'scrooloose/syntastic'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'klen/python-mode'
+Plugin 'vim-scripts/indentpython.vim'
+" Plugin 'klen/python-mode'
+Plugin 'nvie/vim-flake8'
 " Support for julia language
 Plugin 'JuliaEditorSupport/julia-vim'
+Plugin 'xuhdev/vim-latex-live-preview'
+Plugin 'jnurmine/Zenburn'
+
 
 " All plugins have to be added before this
 call vundle#end()
 filetype plugin indent on
 
 set nu
+set encoding=utf-8
 "-----------Settings for wrapping text
 set wrap
 set linebreak
@@ -80,6 +87,7 @@ xnoremap p pgvy
 autocmd BufWinLeave *.* mkview
 autocmd BufWinEnter *.* silent loadview
 
+let python_highlight_all=1
 syntax on
 set t_Co=256
 
@@ -88,7 +96,13 @@ set t_Co=256
 "highlight ExtraWhitespace ctermbg=124    
 
 let g:jellybeans_background_color_256='NONE'
-colorscheme jellybeans
+" colorscheme jellybeans
+colorscheme zenburn
+hi Normal ctermbg=NONE
+let g:zenburn_italic_Comment=1
+let g:zenburn_subdued_LineNr=1
+match Operator /\w\+=/
+2match Operator /self/
 "let g:lucius_style = 'light'
 "colorscheme lucius
 "set background=light
@@ -102,11 +116,12 @@ hi ColorColumn ctermbg=234
 "hi ColorColumn ctermbg=153 ctermfg=9
 "hi ColorColumn ctermbg=7 ctermfg=9
 set colorcolumn=80
+set hlsearch
 
 " Overlength definition has to come after this
-hi OverLength ctermfg=9
-syntax match ExtraWhitespace /read_/ 
-autocmd BufWinEnter * match OverLength '\%>80v'
+" hi OverLength ctermfg=9
+" syntax match ExtraWhitespace /read_/ 
+" autocmd BufWinEnter * match OverLength '\%>80v'
 
 "filetype plugin on
 "set omnifunc=syntaxcomplete#Complete
@@ -139,7 +154,10 @@ let g:pymode_lint = 0
 let g:pymode_rope_completion = 0
 let g:pymode_rope_complete_on_dot=0
 let g:syntastic_check_on_open = 1
-let g:syntastic_python_checkers = ['pylint']
+" let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_python_python_exec = 'python3'
+let g:syntastic_python_checkers = ['python']
+" Highlight syntax.
 
 
 " Working with buffers
